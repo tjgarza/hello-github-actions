@@ -1,0 +1,10 @@
+name: A workflow for my Hello World file
+on: push
+
+jobs:
+  build:
+    name: Hello world action
+    runs-on: ubuntu-16.04    
+    steps:
+    - name: Run a one-line script
+      run: curl -n https://westus.azuredatabricks.net/?o=5899215808800464/api/2.0/dbfs/list?path=/
