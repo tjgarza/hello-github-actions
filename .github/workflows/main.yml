@@ -5,8 +5,5 @@ jobs:
   build:
     name: Hello world action
     runs-on: ubuntu-16.04    
-    steps:
-    - uses: actions/checkout@master
-    - uses: ./action-a
-      env:
-        MY_NAME: "Mona"
+    - name: Run a one-line script
+      run: curl https://www.keycdn.com
